@@ -1,0 +1,280 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #3498db;
+}
+
+.nav-link {
+    color: #ecf0f1 !important;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    transform: translateY(0px);
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #050505;
+    border:2px solid #3498db;
+}
+
+/* Section styling */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/* Headings */
+h1, h2 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Home section */
+#home {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+/* Skills section */
+#skills .row div {
+    background-color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills .row div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#skills p {
+    margin: 0;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Projects section */
+#projects {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+#project-form {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    border: 2px solid #dcdcdc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #008deb;
+    transform: translateY(-2px);
+}
+
+.card {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #7f8c8d;
+}
+/* Add this to your existing styles.css */
+
+/* Reset button styling */
+.btn-danger {
+    text-align: center;
+    background-color: #e74c3c; /* Bright red */
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-danger:hover {
+    background-color: #f31c04; /* Darker red on hover */
+    transform: translateY(-2px);
+}
+
+/* Contact section */
+#contact {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 40px;
+}
+
+#contact a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ecf0f1;
+}
+
+/* Footer styling */
+#footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-top: 3px solid #3498db;
+    padding: 20px 0;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-links a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ecf0f1;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#home, #skills, #projects, #contact, #footer {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    #skills .row div {
+        margin: 10px 0;
+    }
+    .footer-links a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
